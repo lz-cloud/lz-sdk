@@ -7,4 +7,8 @@ public interface PayService {
 
     Result<PayOrder> payOrderNew(PayOrder payOrder);
 
+    Result<PayOrder> orderPayStatus(PayOrder payOrder);
+
+
+
 }

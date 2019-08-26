@@ -20,6 +20,7 @@ public interface Rest {
      */
     // 创建支付订单
     String PAY_ORDER_NEW = "/pay/order/new";
-
+    // 支付状态查询
+    String ORDER_PAY_STATUS = "/order/pay/status";
 
 }

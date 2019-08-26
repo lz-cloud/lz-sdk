@@ -13,5 +13,7 @@ public interface PayFeign {
 
     @PostMapping(Rest.PAY_ORDER_NEW)
     Result<PayOrder> payOrderNew(@RequestBody PayOrder payOrder);
+    @PostMapping(Rest.ORDER_PAY_STATUS)
+    Result<PayOrder> orderPayStatus(@RequestBody PayOrder payOrder);
 
 }

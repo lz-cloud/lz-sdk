@@ -18,4 +18,10 @@ public class PayServiceImpl implements PayService {
         Result<PayOrder> result = payFeign.payOrderNew(payOrder);
         return result;
     }
+
+    @Override
+    public Result<PayOrder> orderPayStatus(PayOrder payOrder) {
+        Result<PayOrder> result = payFeign.orderPayStatus(payOrder);
+        return result;
+    }
 }
