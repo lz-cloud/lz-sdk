@@ -1,4 +1,4 @@
-package com.wkclz.sdk.domain;
+package com.wkclz.sdk.domain.sys;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.wkclz.core.base.BaseModel;
@@ -121,5 +121,10 @@ public class Organization extends BaseModel {
      * 备注
      */
     private String comments;
+
+    /**
+     * 版本号
+     */
+    private Integer version;
 
 }

@@ -1,7 +1,7 @@
 package com.wkclz.sdk.service.impl;
 
 import com.wkclz.core.base.Result;
-import com.wkclz.sdk.domain.Organization;
+import com.wkclz.sdk.domain.sys.Organization;
 import com.wkclz.sdk.feign.SysFeign;
 import com.wkclz.sdk.service.SysService;
 import org.springframework.beans.factory.annotation.Autowired;
