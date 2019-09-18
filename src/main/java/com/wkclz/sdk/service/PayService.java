@@ -9,6 +9,4 @@ public interface PayService {
 
     Result<PayOrder> orderPayStatus(PayOrder payOrder);
 
-
-
 }

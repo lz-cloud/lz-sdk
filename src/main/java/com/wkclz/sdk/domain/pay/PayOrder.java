@@ -165,4 +165,17 @@ public class PayOrder extends BaseModel {
      */
     private String comments;
 
+
+
+
+    /**
+     * 字符编码格式
+     */
+    private String charset;
+
+    /**
+     * 支付页面
+     */
+    private String htmlBody;
+
 }

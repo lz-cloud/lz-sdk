@@ -1,20 +1,24 @@
-package com.wkclz.sdk.domain.sys;
+package com.wkclz.sdk.domain.cas;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.wkclz.core.base.BaseModel;
+import com.wkclz.core.util.StringUtil;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Description: Create by Shrimp Generator
  * @author: wangkaicun @ current time
- * @table: sys_organization (组织机构)
+ * @table: cas_user_admin (管理员用户)
  */
 
 @Data
-public class Organization extends BaseModel {
+public class UserAdmin extends BaseModel {
 
     /**
      * ID
@@ -22,69 +26,14 @@ public class Organization extends BaseModel {
     private Long id;
 
     /**
-     * 机构名称
+     * 用户id
      */
-    private String name;
+    private Long userId;
 
     /**
-     * 网站标题
+     * 组织id
      */
-    private String title;
-
-    /**
-     * 网站关键词
-     */
-    private String keywords;
-
-    /**
-     * 网站描述
-     */
-    private String description;
-
-    /**
-     * 网站图标
-     */
-    private String icon;
-
-    /**
-     * 网站logo
-     */
-    private String logo;
-
-    /**
-     * 版权信息
-     */
-    private String copyright;
-
-    /**
-     * 地区
-     */
-    private String area;
-
-    /**
-     * 类型
-     */
-    private String type;
-
-    /**
-     * 默认生效域名
-     */
-    private String domain;
-
-    /**
-     * 支持的域名
-     */
-    private String domains;
-
-    /**
-     * 管理员域名
-     */
-    private String adminDomain;
-
-    /**
-     * banner图组
-     */
-    private String banners;
+    private Long orgId;
 
     /**
      * 排序
