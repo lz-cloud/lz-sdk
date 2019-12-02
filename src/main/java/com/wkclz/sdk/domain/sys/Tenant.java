@@ -2,17 +2,17 @@ package com.wkclz.sdk.domain.sys;
 
 import com.wkclz.core.base.BaseModel;
 import lombok.Data;
-
-import java.util.Date;
+import lombok.EqualsAndHashCode;
 
 /**
  * Description: Create by Shrimp Generator
  * @author: wangkaicun @ current time
- * @table: sys_organization (组织机构)
+ * @table: sys_tenant (租户)
  */
 
 @Data
-public class Organization extends BaseModel {
+@EqualsAndHashCode(callSuper = false)
+public class Tenant extends BaseModel {
 
     /**
      * ID
@@ -20,32 +20,32 @@ public class Organization extends BaseModel {
     private Long id;
 
     /**
-     * 机构名称
+     * 租户名称
      */
     private String name;
 
     /**
-     * 网站标题
+     * 租户标题
      */
     private String title;
 
     /**
-     * 网站关键词
+     * 租户关键词
      */
     private String keywords;
 
     /**
-     * 网站描述
+     * 租户描述
      */
     private String description;
 
     /**
-     * 网站图标
+     * 租户图标
      */
     private String icon;
 
     /**
-     * 网站logo
+     * 租户logo
      */
     private String logo;
 
@@ -84,34 +84,6 @@ public class Organization extends BaseModel {
      */
     private String banners;
 
-    /**
-     * 排序
-     */
-    private Integer sort;
 
-    /**
-     * 可用状态
-     */
-    private Integer enableFlag;
-
-    /**
-     * 可用开始
-     */
-    private Date enableBegin;
-
-    /**
-     * 可用结束
-     */
-    private Date enableEnd;
-
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-
-    /**
-     * 备注
-     */
-    private String comments;
 
 }

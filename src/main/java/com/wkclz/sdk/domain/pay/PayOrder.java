@@ -21,9 +21,9 @@ public class PayOrder extends BaseModel {
     private Long id;
 
     /**
-     * 组织ID
+     * 租户ID
      */
-    private Long orgId;
+    private Long tenantId;
 
     /**
      * 用户ID
@@ -124,37 +124,6 @@ public class PayOrder extends BaseModel {
      * 支付时间
      */
     private Date payTime;
-
-    /**
-     * 排序
-     */
-    private Integer sort;
-
-    /**
-     * 可用状态
-     */
-    private Integer enableFlag;
-
-    /**
-     * 可用开始
-     */
-    private Date enableBegin;
-
-    /**
-     * 可用结束
-     */
-    private Date enableEnd;
-
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-
-    /**
-     * 备注
-     */
-    private String comments;
-
 
 
 

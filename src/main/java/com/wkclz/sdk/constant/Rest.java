@@ -1,14 +1,12 @@
 package com.wkclz.sdk.constant;
 
-import com.wkclz.core.base.annotation.Desc;
-
 public interface Rest {
 
     /**
      * sys
      */
-    // 1. 组织保存
-    String ORG_SAVE = "/org/save";
+    // 1. 租户保存
+    String TENANT_SAVE = "/tenant/save";
 
 
 

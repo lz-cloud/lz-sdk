@@ -16,7 +16,7 @@
     <packaging>jar</packaging>
 
     <name>lz-sdk</name>
-    <description>lz-sddk</description>
+    <description>lz-sdk</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -24,6 +24,10 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -33,6 +37,12 @@
             <artifactId>feign-okhttp</artifactId>
             <version>10.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.wkclz.core</groupId>
+            <artifactId>lz-core</artifactId>
+            <version>3.0.2-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
