@@ -40,7 +40,7 @@
         <dependency>
             <groupId>com.wkclz.core</groupId>
             <artifactId>lz-core</artifactId>
-            <version>3.0.2-SNAPSHOT</version>
+            <version>3.1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
